@@ -1,5 +1,6 @@
 import React from 'react';
-import { Flex, Link, Image } from '@chakra-ui/react';
+import { Flex, Image, Button } from '@chakra-ui/react';
+import { Link } from 'react-router-dom'
 
 import logo from "../../assets/img/logo-sf.png"
 
@@ -51,60 +52,68 @@ export default function Sidebar (){
               w='100%'
             >
                 
-              <Link
-                href='/'
-                textDecoration='none'
-                fontFamily='sans-serif'
-                fontWeight='bold'
-                fontStyle='normal'
-                fontSize={18}
-                color='#EEE'
-                _hover={{ color: '#2ECC71', transition: 0.3 }}
-                mr={5}
-              >
-                Home
+              <Link to='/' style={{textDecoration: "none"}} >
+                <Button
+                  fontFamily='sans-serif'
+                  fontWeight='bold'
+                  fontStyle='normal'
+                  fontSize={18}
+                  color='#EEE'
+                  bg='transparent'
+                  _hover={{ color: '#2ECC71', transition: 0.3 }}
+                  mr={5}
+                >
+                  Home
+                </Button>
               </Link>
 
-              <Link
-                href='/about'
-                textDecoration='none'
-                fontFamily='sans-serif'
-                fontWeight='bold'
-                fontStyle='normal'
-                fontSize={18}
-                color='#EEE'
-                _hover={{ color: '#2ECC71', transition: 0.3 }}
-                mr={5}
-              >
-                Sobre
+              <Link to='/about' style={{textDecoration: "none"}} >
+                <Button
+                  fontFamily='sans-serif'
+                  fontWeight='bold'
+                  fontStyle='normal'
+                  fontSize={18}
+                  color='#EEE'
+                  bg='transparent'
+                  _hover={{ color: '#2ECC71', transition: 0.3 }}
+                  mr={5}
+                >
+                  Sobre
+                </Button>
+                
               </Link>
 
               
-              <Link
-                href='/projects'
-                textDecoration='none'
-                fontFamily='sans-serif'
-                fontWeight='bold'
-                fontStyle='normal'
-                fontSize={18}
-                color='#EEE'
-                _hover={{ color: '#2ECC71', transition: 0.3 }}
-                mr={5}
-              >
-                Projetos
+              <Link to='/projects' style={{textDecoration: "none"}} >
+                <Button
+                  fontFamily='sans-serif'
+                  fontWeight='bold'
+                  fontStyle='normal'
+                  fontSize={18}
+                  color='#EEE'
+                  bg='transparent'
+                  _hover={{ color: '#2ECC71', transition: 0.3 }}
+                  mr={5}
+                >
+                  Projetos
+                </Button>
+                
               </Link>
 
-              <Link
-                href='/contact'
-                textDecoration='none'
-                fontFamily='sans-serif'
-                fontWeight='bold'
-                fontStyle='normal'
-                fontSize={18}
-                color='#EEE'
-                _hover={{ color: '#2ECC71', transition: 0.3 }}
-              >
-                Contato
+              <Link to='/contact' style={{textDecoration: "none"}} >
+                <Button
+                  fontFamily='sans-serif'
+                  fontWeight='bold'
+                  fontStyle='normal'
+                  fontSize={18}
+                  color='#EEE'
+                  bg='transparent'
+                  _hover={{ color: '#2ECC71', transition: 0.3 }}
+                  mr={5}
+                >
+                  Contato
+                </Button>
+                 
               </Link>
 
             </Flex>
