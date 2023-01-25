@@ -57,8 +57,8 @@ class Projects extends Component {
             • Reactjs<br />
             • Firebase<br />
           </Text>
-          <Box w="50%" p={4} color="white">
-            <Slide slides={SlideTickets} h={300} w={400} />
+          <Box w="75%" p={4} color="white">
+            <Slide slides={SlideTickets} h={600} w={600} />
           </Box>
        
           <Link
@@ -86,8 +86,8 @@ class Projects extends Component {
           >
             Projeto de Campo minado classico do windowws, desenvolvido em React Native para Android e iOS.
           </Text>
-          <Box w="25%" p={4} color="white">
-            <Slide slides={SlideMine} h={360} w={160} />
+          <Box w="15%" p={4} color="white">
+            <Slide slides={SlideMine} h={360} w={100} />
           </Box>
                     
           <Link
@@ -115,8 +115,8 @@ class Projects extends Component {
           >
             Projeto de Aluguel de casa e afins desenvolvido em React Native para Android e iOS.
           </Text>
-          <Box w="25%" p={4} color="white">
-            <Slide slides={SlideHouse} h={360} w={160} />
+          <Box w="15%" p={4} color="white">
+            <Slide slides={SlideHouse} h={360} w={100} />
           </Box>
    
         </Flex>
