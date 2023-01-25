@@ -25,7 +25,7 @@ export const skillItem = [
     titulo: 'HTML', Percentual: '50%', icon: <DiHtml5 size={35} color="#FF5733" />, color: '#FF5733'
   },
   {
-    titulo: 'CSS', Percentual: '50%', icon: <DiCss3 size={30} color="#3C99DC" />, color: '#3C99DC'
+    titulo: 'CSS', Percentual: '50%', icon: <DiCss3 size={35} color="#3C99DC" />, color: '#3C99DC'
   },
   {
     titulo: 'JavaScript', Percentual: '85%', icon: <SiJavascript size={30} color="#F0DB4F" />, color: '#F0DB4F'
