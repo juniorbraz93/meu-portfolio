@@ -18,6 +18,8 @@ import {
   FaNodeJs,
  } from "react-icons/fa";
 
+//
+
 export const skillItem = [
   {
     titulo: 'HTML', Percentual: '50%', icon: <DiHtml5 size={35} color="#FF5733" />, color: '#FF5733'

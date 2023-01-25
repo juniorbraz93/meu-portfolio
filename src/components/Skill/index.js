@@ -10,7 +10,7 @@ import { motion, isValidMotionProp } from 'framer-motion';
 
 import { skillItem } from '../../assets/skill'
 
-
+//
 
 const ChakraBox = chakra(motion.div, {
   shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
