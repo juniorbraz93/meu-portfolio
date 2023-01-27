@@ -1,15 +1,14 @@
-import { Component } from "react";
-import { Flex, Text, Image } from "@chakra-ui/react";
+import { Flex, Text, useMediaQuery, Image } from "@chakra-ui/react";
 
 import photo from "../../assets/img/eu.png";
 
-class Home extends Component {
-  render() {
+export default function Home() {
+    const [isMobile] = useMediaQuery("(max-width: 600px)")
     return (
       <>
         <Flex
           display="flex"
-          direction="row-reverse" // Aplicar reponsividade (Lembrar você sabe o que é)
+          direction={isMobile ? 'column' : "row-reverse"} // Aplicar reponsividade (Lembrar você sabe o que é)
           alignItems="center"
           justifyContent="center"
           p={10}
@@ -19,7 +18,7 @@ class Home extends Component {
           mt={50}
         >
           <Flex>
-            <Image w={400} h={400} borderRadius={200} src={photo} />
+            <Image w={isMobile ? 200 : 400} h={isMobile ? 200 : 400} borderRadius={isMobile ? 100 : 200} src={photo} />
           </Flex>
 
           <Flex
@@ -60,7 +59,5 @@ class Home extends Component {
         </Flex>
       </>
     );
-  }
 }
 
-export default Home;
