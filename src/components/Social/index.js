@@ -12,6 +12,7 @@ import ModalEmail from "../ModalEmail";
 
 export default function Social() {
   const [isMobile] = useMediaQuery("(max-width: 800px)")
+  const [isMobile2] = useMediaQuery("(max-width: 400px)")
 
   const listMediaSocial = [
   { id: 1, icon: <SiLinkedin style={{marginRight: 10}} color="#0e76a8" />, nameUrl: 'LinkedIn', url: 'https://www.linkedin.com/in/jose-braz-junior/'},
@@ -35,7 +36,7 @@ export default function Social() {
       fontWeight={600}
       fontFamily="Poppins"
       fontSize='1.2em'
-      w={isMobile ? 400 : 800}
+      w={isMobile2 ? 300 : isMobile ? 400 : 800}
       p={15}
       m={1}
       >

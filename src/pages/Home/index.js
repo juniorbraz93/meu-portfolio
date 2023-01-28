@@ -5,6 +5,7 @@ import photo from "../../assets/img/eu.png";
 export default function Home() {
     const [isMobile] = useMediaQuery("(max-width: 1024px)")
     const [isMobile2] = useMediaQuery("(max-width: 600px)")
+    const [isMobile3] = useMediaQuery("(max-width: 400px)")
     return (
       <>
         <Flex
@@ -13,6 +14,7 @@ export default function Home() {
           alignItems="center"
           justifyContent="center"
           p={10}
+          ml={isMobile3 ? 100 : 0 }
           mt={150}
         >
           <Flex mt={25} >

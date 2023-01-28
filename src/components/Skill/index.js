@@ -3,7 +3,8 @@ import {
   Flex,
   Text,
   chakra,
-  shouldForwardProp
+  shouldForwardProp,
+  useMediaQuery
 } from '@chakra-ui/react'
 
 import { motion, isValidMotionProp } from 'framer-motion';
@@ -17,6 +18,8 @@ const ChakraBox = chakra(motion.div, {
 });
 
 export default function Skill() {
+  const [isMobile] = useMediaQuery("(max-width: 400px)")
+
   const ItensSkill = skillItem;
  return (
    <>
@@ -25,7 +28,7 @@ export default function Skill() {
     alignItems='center'
     justifyContent='center'
     bg='gray.700'
-    w='85%'
+    w='100%'
     p={5}
     borderRadius={20}
    >
@@ -49,7 +52,6 @@ export default function Skill() {
             animate={{ x: ['-100px', '100px', '0px'] }}
             transition={{ ease: "easeOut", duration: 1 }}
             display='flex'
-            mr={2}
             mb={2}
           >
             {item.icon}
@@ -57,9 +59,10 @@ export default function Skill() {
             >
                 <Text
                   ml={2}
+                  mr={2}
                   mb= '2%'
                   color= '#FFF'
-                  fontSize={20}
+                  fontSize={isMobile ? 12 : 20}
                   fontWeight='bold'
                   fontFamily="Poppins"
                 >

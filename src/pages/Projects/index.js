@@ -77,8 +77,8 @@ export default function Projects() {
           ) : (
             <Slide 
             slides={SlideTickets}
-            h={ isMobile ? 300 : 600 }
-            w={ isMobile ? 300 : 600 }
+            h={ isMobile ? 300 : 700 }
+            // w={ isMobile ? 300 : 700 }
             
           />
           ) }
@@ -151,7 +151,15 @@ export default function Projects() {
           h={10}
         >
           <SiGithub style={{marginRight: 10}} color="#171515" />
-          Aluguel de casas
+          { isMobile2 ? (
+            <></>
+          ) : (
+            <Text
+            fontSize={ isMobile ? 15 : 20 }
+            >
+              Aluguel de casas
+            </Text>
+          ) }
         </Link>
         <Text
           color='#FFF'

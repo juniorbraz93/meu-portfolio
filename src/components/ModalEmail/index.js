@@ -11,6 +11,7 @@ Modal.setAppElement('#root');
 
 function ModalEmail() {
     const [isMobile] = useMediaQuery("(max-width: 800px)")
+    const [isMobile2] = useMediaQuery("(max-width: 400px)")
   
     let subtitle;
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -27,7 +28,8 @@ function ModalEmail() {
       setIsOpen(false);
     }
     return (
-      <Flex>
+      <Flex
+      >
         <Flex
           onClick={openModal}
         >
@@ -44,7 +46,7 @@ function ModalEmail() {
                 fontSize='1.2em'
                 p={15}
                 position='relative'
-                w={ isMobile ? 400 : 800 }
+                w={isMobile2 ? 300 : isMobile ? 400 : 800}
                 m={1}
                 transition='0.3s ease-in'
               >   

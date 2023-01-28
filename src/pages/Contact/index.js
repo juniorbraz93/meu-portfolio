@@ -1,13 +1,15 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text, useMediaQuery } from "@chakra-ui/react";
 
 import Social from '../../components/Social'
 
 export default function Contact() {
+  const [isMobile] = useMediaQuery("(max-width: 400px)")
+
   return (
     <>
       <Flex
-        m={100}
-        p={5}
+        ml={isMobile ? 100 : 0 }
+        mt={100}
         color='#FFF'
         direction='column'
         justifyContent='center'
@@ -16,8 +18,8 @@ export default function Contact() {
           <Image
             display='flex'
             m='auto'
-            w={175}
-            h={175}
+            w={isMobile ? 100 : 175}
+            h={isMobile ? 100 : 175}
             src='https://github.com/juniorbraz93.png'
             alt='eu'
             backgroundSize='cover'
