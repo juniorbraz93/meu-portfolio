@@ -3,28 +3,38 @@ import { Flex, Text, useMediaQuery, Image } from "@chakra-ui/react";
 import photo from "../../assets/img/eu.png";
 
 export default function Home() {
-    const [isMobile] = useMediaQuery("(max-width: 500px)")
+    const [isMobile] = useMediaQuery("(max-width: 1024px)")
+    const [isMobile2] = useMediaQuery("(max-width: 600px)")
     return (
       <>
         <Flex
           display="flex"
-          direction={isMobile ? 'column' : "row-reverse"} // Aplicar reponsividade (Lembrar você sabe o que é)
+          direction={isMobile ? "column" : "row-reverse"} //  Aplicar reponsividade (Lembrar você sabe o que é)
           alignItems="center"
           justifyContent="center"
           p={10}
-          w="auto"
-          h="auto"
-          ml={150}
-          mt={50}
+          mt={150}
         >
           <Flex mt={25} >
-            <Image 
-              w={isMobile ? 200 : 400} 
-              h={isMobile ? 200 : 400} 
-              borderRadius={isMobile ? 100 : 200} 
-              src={photo}
-              border='5px solid #2ECC71'
-            />
+            {
+              isMobile2 ? (
+                <Image 
+                  w={250} 
+                  h={250} 
+                  borderRadius='50%' 
+                  src={photo}
+                  border='5px solid #2ECC71'
+                />
+              ) : (
+                <Image 
+                  w={isMobile ? 290 : 400} 
+                  h={isMobile ? 290 : 400} 
+                  borderRadius='50%' 
+                  src={photo}
+                  border='5px solid #2ECC71'
+                />
+              )
+            }
           </Flex>
 
           <Flex

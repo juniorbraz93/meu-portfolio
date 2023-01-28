@@ -1,10 +1,12 @@
 import React from 'react';
-import { Flex, Image, Button } from '@chakra-ui/react';
+import { Flex, Image, Button, useMediaQuery } from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
 
 import logo from "../../assets/img/logo-sf.png"
 
 export default function Sidebar (){
+  const [isMobile] = useMediaQuery("(max-width: 600px)")
+
   return(
     <>
       {/* Container Geral */}
@@ -12,7 +14,6 @@ export default function Sidebar (){
         display='flex'
         direction='row'
         justifyContent='center'
-        m={1}
       >
         {/* Container Sidebar */}
         <Flex 
@@ -37,16 +38,13 @@ export default function Sidebar (){
           >
             <Image
               src={logo}
-              display='flex'
-              direction='row'
-              justifyContent='center'
-              alignItems='center'
-              
-              w={100}
-              h={100}
+              w={isMobile ? 20 : 100}
+              h={isMobile ? 20 : 100}
             />
 
             <Flex
+              // display='flex'
+              // direction='row'
               justifyContent='center'
               alignItems='center'
               h='100%'
@@ -62,7 +60,6 @@ export default function Sidebar (){
                   color='#EEE'
                   bg='transparent'
                   _hover={{ color: '#2ECC71', transition: 0.3 }}
-                  mr={5}
                 >
                   Home
                 </Button>
@@ -77,7 +74,6 @@ export default function Sidebar (){
                   color='#EEE'
                   bg='transparent'
                   _hover={{ color: '#2ECC71', transition: 0.3 }}
-                  mr={5}
                 >
                   Sobre
                 </Button>
@@ -94,7 +90,6 @@ export default function Sidebar (){
                   color='#EEE'
                   bg='transparent'
                   _hover={{ color: '#2ECC71', transition: 0.3 }}
-                  mr={5}
                 >
                   Projetos
                 </Button>
@@ -110,7 +105,6 @@ export default function Sidebar (){
                   color='#EEE'
                   bg='transparent'
                   _hover={{ color: '#2ECC71', transition: 0.3 }}
-                  mr={5}
                 >
                   Contato
                 </Button>
