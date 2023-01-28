@@ -12,7 +12,10 @@ import {
   SiFirebase,
   SiGraphql,
   SiVisualstudiocode,
-  SiInsomnia
+  SiInsomnia,
+  SiPostman,
+  // SiPrisma,
+  SiExpress
  } from "react-icons/si";
 
  import {
@@ -39,7 +42,7 @@ export const skillItem = [
     titulo: 'NodeJS', Percentual: '85%', icon: <FaNodeJs size={35} color="#68A063" />, color: '#68A063'
   },
   {
-    titulo: 'AdonisJS', Percentual: '85%', icon: <SiAdonisjs size={35} color="#330066" />, color: '#330066'
+    titulo: 'Express', Percentual: '85%', icon: <SiExpress size={35} color="#010101" />, color: '#010101'
   },
   {
     titulo: 'ReactJS', Percentual: '65%', icon: <DiReact size={35} color="#61DBFB" />, color: '#61DBFB'
@@ -48,16 +51,22 @@ export const skillItem = [
     titulo: 'React Native', Percentual: '65%', icon: <DiReact size={35} color="#61DBFB" />, color: '#61DBFB'
   },
   {
-    titulo: 'MySQL', Percentual: '75%', icon: <DiMysql size={35} color="#F29111" />, color: '#F29111'
+    titulo: 'AdonisJS', Percentual: '85%', icon: <SiAdonisjs size={35} color="#330066" />, color: '#330066'
   },
   {
-    titulo: 'Firebase', Percentual: '60%', icon: <SiFirebase size={35} color="#F6820D" />, color: '#F6820D'
+    titulo: 'MySQL', Percentual: '75%', icon: <DiMysql size={35} color="#F29111" />, color: '#F29111'
   },
+  // {
+  //   titulo: 'Prisma', Percentual: '75%', icon: <SiPrisma size={35} color="#4C51BF" />, color: '#4C51BF'
+  // },
   {
     titulo: 'GraphQL', Percentual: '60%', icon: <SiGraphql size={35} color="#E535AB" />, color: '#E535AB'
   },
   {
     titulo: 'Git', Percentual: '75%', icon: <DiGit size={35} color="#F1502F" />, color: '#F1502F'
+  },
+  {
+    titulo: 'Firebase', Percentual: '60%', icon: <SiFirebase size={35} color="#F6820D" />, color: '#F6820D'
   },
   {
     titulo: 'AWS', Percentual: '75%', icon: <FaAws size={35} color="#FEA724" />, color: '#FEA724'
@@ -67,5 +76,8 @@ export const skillItem = [
   },
   {
     titulo: 'Insomnia ', Percentual: '75%', icon: <SiInsomnia size={35} color="#080135" />, color: '#080135'
+  },
+  {
+    titulo: 'Postman ', Percentual: '75%', icon: <SiPostman size={35} color="#EF5B25" />, color: '#EF5B25'
   },
 ]
