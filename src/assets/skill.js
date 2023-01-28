@@ -21,6 +21,7 @@ import {
  import {
   FaNodeJs,
   FaAws,
+  FaDigitalOcean
  } from "react-icons/fa";
 
 //
@@ -70,6 +71,9 @@ export const skillItem = [
   },
   {
     titulo: 'AWS', Percentual: '75%', icon: <FaAws size={35} color="#FEA724" />, color: '#FEA724'
+  },
+  {
+    titulo: 'DigitalOcean', Percentual: '75%', icon: <FaDigitalOcean size={35} color="#0080FF" />, color: '#0080FF'
   },
   {
     titulo: 'VS Code', Percentual: '75%', icon: <SiVisualstudiocode size={35} color="#0078D7" />, color: '#0078D7'
