@@ -41,6 +41,7 @@ export default function Sidebar (){
               direction='row'
               justifyContent='center'
               alignItems='center'
+              
               w={100}
               h={100}
             />

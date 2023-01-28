@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import { Flex, Link } from "@chakra-ui/react";
+import { Flex, Link, useMediaQuery } from "@chakra-ui/react";
 
 
 import {  SiGmail } from "react-icons/si";
@@ -10,6 +10,7 @@ import Email from '../Email';
 Modal.setAppElement('#root');
 
 function ModalEmail() {
+    const [isMobile] = useMediaQuery("(max-width: 800px)")
   
     let subtitle;
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -43,7 +44,7 @@ function ModalEmail() {
                 fontSize='1.2em'
                 p={15}
                 position='relative'
-                w={800}
+                w={ isMobile ? 400 : 800 }
                 m={1}
                 transition='0.3s ease-in'
               >   
